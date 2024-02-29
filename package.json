@@ -1,0 +1,45 @@
+{
+  "name": "api-testing",
+  "version": "1.0.0",
+  "description": "API Testing with TypeScript, Jest, and Got",
+  "keywords": [
+    "api",
+    "testing",
+    "jest",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/venkatrao24/api-testing-jest-typescript.git"
+  },
+  "author": "Venkat Rao",
+  "license": "",
+  "engines": {
+    "node": ">=18"
+  },
+  "type": "module",
+  "dependencies": {
+    "ajv": "8.12.0",
+    "date-fns": "2.30.0",
+    "got": "13.0.0",
+    "jest": "29.7.0",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/jest": "29.5.10",
+    "@typescript-eslint/eslint-plugin": "6.12.0",
+    "@typescript-eslint/parser": "6.12.0",
+    "eslint": "8.55.0",
+    "eslint-plugin-simple-import-sort": "10.0.0",
+    "jest-extended": "4.0.2",
+    "prettier": "3.1.0",
+    "ts-jest": "29.1.1",
+    "typescript": "5.2.2"
+  },
+  "scripts": {
+    "format": "npx prettier --write .",
+    "lint": "eslint '**/*.{js,ts}'",
+    "lint:fix": "eslint --fix '**/*.{js,ts}'",
+    "test": "node --experimental-vm-modules ./node_modules/.bin/jest --runInBand --config jest.config.ts"
+  }
+}
